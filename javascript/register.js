@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    var username = $("#username");
     var password = $("#password");
     var confirmPassword = $("#confirm-password");
     var email = $("#email-address");
+    var confirmCode = $("#confirm_code");
 
     email.on("change", function () {
         emailFormatVerification(email.val());
@@ -14,6 +14,10 @@ $(document).ready(function () {
 
     confirmPassword.on("change", function () {
         checkEqual(password.val(), confirmPassword.val());
+    });
+
+    confirmCode.on("change", function () {
+        checkConfirmCode(confirmCode.val());
     });
 
     var identifiedCodeBtn = $("#getPass-btn");
@@ -49,8 +53,7 @@ $(document).ready(function () {
                         alert("Error! Can not send mail. "+data.result)
                     },
                     success : function (data) {
-                            alert(data.result);  //弹出正确窗口
-                            real_pass = data.key;   //设置验证码赋值给real_pass
+                            window.real_pass = data.key;   //设置验证码赋值给real_pass
                     }
                 })
 
@@ -66,8 +69,10 @@ function checkEqual(password, confirm_password){
         toast("确认密码错误", "与设定密码不符", "error");
     }
     else{
-        toast("确认密码正确", "符合要求", "error");
+        toast("确认密码正确", "符合要求", "success");
+        return true;
     }
+    return false;
 }
 
 function checkLegal(password){
@@ -79,11 +84,13 @@ function checkLegal(password){
     }
     else{
         toast("密码无误", "密码格式符合要求", "success");
+        return true;
     }
+    return false;
 }
 
 function emailFormatVerification(val) {
-    if (val === null || val === "") {
+    if (val === null || val === "" || val === undefined) {
         toast("邮箱错误", "邮箱不能为空", "notice");
         return false;
     }
@@ -94,11 +101,31 @@ function emailFormatVerification(val) {
         for (var i = 0; i < domains.length; i++) {
             if (domain === domains[i]) {
                 toast("邮箱无误", "邮箱格式符合要求", "success");
-
+                return true;
             }
         }
     }
     toast("邮箱错误", "邮箱格式错误", "error");
+    return false;
+}
+
+function checkConfirmCode(confirmCode){
+    if (window.real_pass === undefined || window.real_pass === "" || window.real_pass === null){
+        toast("验证码提醒", "您还没有请求验证码呢！", "notice");
+        return false;
+    }
+    else {
+        if (confirmCode === undefined || confirmCode === "" || confirmCode === null) {
+            toast("验证码错误", "验证码不能为空", "error");
+        }
+        else if (confirmCode.toLowerCase() !== window.real_pass.toLowerCase()){
+            toast("验证码错误", "验证码不匹配", "error");
+        }
+        else{
+            toast("验证码正确", "验证码匹配", "success");
+            return true;
+        }
+    }
     return false;
 }
 
@@ -114,4 +141,20 @@ function toast(title, message, type){
         has_progress:true,
         rtl:false,
     });
+}
+
+function submitCheck(){
+    var password = $("#password");
+    var confirmPassword = $("#confirm-password");
+    var email = $("#email-address");
+    var username = $("#username");
+    var confirmCode = $("#confirm_code");
+
+    if (username.val() === "" || username.val() === undefined || username.val() === null){
+        toast("用户名错误", "用户名不能为空" ,"notice");
+        return false;
+    }
+
+    return emailFormatVerification(email.val()) && checkLegal(password.val())
+        && checkEqual(password.val(), confirmPassword.val()) && checkConfirmCode(confirmCode.val());
 }

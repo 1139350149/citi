@@ -23,7 +23,7 @@
     display: inline-block;
     width: 60%;
     text-indent: 1em;
-    font-size: large;
+    font-size: 18px;
     border-radius: 10px;
     outline: none;
     padding: 10px;
@@ -33,6 +33,10 @@
 
 .input-regulation:focus{
     box-shadow: 0 0 0 3px rgba(0, 123, 255, .25) ;
+}
+
+.input-regulation::-webkit-input-placeholder{
+    font-size: 16px;
 }
 
 .button{
