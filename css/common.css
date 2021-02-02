@@ -43,3 +43,16 @@
     border: none;
 }
 
+.contract-title-container{
+    margin: 0 auto;
+    padding: 10px 5px;
+    width: 95%;
+    border-bottom: 1px solid #cccccc;
+}
+
+.contract-title{
+    padding: 3px 3px 0;
+    margin-bottom: 0;
+    font-size: 28px;
+    text-indent: 0.5em;
+}

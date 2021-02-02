@@ -38,13 +38,30 @@
     width: 70%;
 }
 
-.home-content{
-    font-family: 'Arial Normal', 'Arial';
-    font-size: 16px;
-    font-weight: 400;
+.home-content a{
+    font-size: 20px;
+    font-weight: 700;
     line-height: 28px;
-    overflow-wrap: break-word;
-    color: rgb(81, 81, 81);
+    color: rgb(102, 102, 102);
+}
+
+.home-content a:first-child{
+    color: rgb(51, 51, 51);
+}
+
+.home-content a:hover{
+    color: rgb(0, 116, 238);
+    text-decoration: none;
+}
+
+.arrow{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.arrow > img{
+    margin: 0;
+    padding: 0;
 }
 
 #entrance{

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>借款合同</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer-black.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/contract-detail.css">
+    <script type="text/javascript" language="JavaScript" src="javascript/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="javascript/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="javascript/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-ligh shadow">
+    <a class="navbar-brand" href="#">
+        <img src="resource/logo.png" alt="logo" width="120px" height="auto">
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item head-tag"><a class="nav-link" href="首页.html">首页</a></li>
+            <li class="nav-item head-tag"><a class="nav-link " href="我的业务.html">我的业务</a></li>
+            <li class="nav-item head-tag"><a class="nav-link " href="javascript：void(0);">关于我们</a></li>
+        </ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item head-tag">
+                <a class="nav-link" href="我的业务.html">
+                    个人中心
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li class="nav-item head-tag">
+                <a class="nav-link" href="登录.html">
+                    切换账号
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid background-mesh background-gray">
+    <div class="contract-detail-container">
+        <div class="contract-title-container">
+            <p class="contract-title">合同签订<span class="contract-title-hint">请您在线填写合同，提交并通过审核后可下载合同进行签章</span></p>
+        </div>
+        <div class="contract-content-container">
+            <form action="" method="post">
+                <p class="text-center" id="contract-name">流动资金借款合同</p>
+                <div class="row">
+                    <p>合同编号：</p>
+                    <div class="sign-area-container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>借款人：<input class="input-regulation" name=""></label>
+                            </div>
+                            <div class="col-md-12">
+                                <label>主要营业地址：<input class="input-regulation" name=""></label>
+                            </div>
+                            <div class="col-md-6">
+                                <label>联系人：<input class="input-regulation" name=""></label>
+                            </div>
+                            <div class="col-md-6">
+                                <label>电话：<input class="input-regulation" name=""></label>
+                            </div>
+                            <div class="col-md-6">
+                                <label>传真：<input class="input-regulation" name=""></label>
+                            </div>
+                            <div class="col-md-6">
+                                <label>电子邮件：<input class="input-regulation" name=""></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sign-area-container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>贷款人：____________银行</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>主要营业地址：_____________</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>联系人：_______________</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>电话：__________________</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>鉴于:</p>
+                <p>借款人因资金周转需要，向贷款人提出流动资金借款申请；经审查，贷款人同意根据本合同的条款和条件发放贷款。
+                    为明确双方的权利和义务，现根据中华人民共和国有关法律、法规及规章，经双方协商一致，特订立本合同，以资遵守。</p>
+                <p>同时借款人与贷款人确认下述首要条款（请根据情况在下述方框中选，不选的打ⅹ）：</p>
+                <p>本合同系作为编号为_________的《融资额度协议》（下称融资额度协议）的附属融资文件签署，本合同生效后，
+                    其所有条款均并入融资额度协议，并作为其组成部分（如果借款人先前已签署了融资额度协议，应选择本项，并注明融资额度协议编号）；</p>
+                <p>本合同为借款人与贷款人之间所签署的独立的信贷文件（如果借款人与贷款人未签署融资额度协议，应选择本项）；</p>
+                <p>担保人均已知晓，本合同的贷款用途为偿还原合同名称：__________________</p>
+                <p>签署时间：_______________编号：_______________项下的贷款_______________。
+                    （如借款用途为借新还旧或续贷业务，则必须选择本项）</p>
+                <div class="clause text-center">
+                    <a data-toggle="collapse" href="#first" role="button"
+                       aria-expanded="false" aria-controls="collapseExample">
+                        第一部分商业条款
+                    </a>
+                </div>
+                <div class="collapse" id="first">
+                    <br>
+                    <p>1．贷款种类：□短期流动资金贷款  □中期流动资金贷款</p>
+                    <br>
+                    <p>2．本合同项下借款金额为_______（币种）___________________元整（大写金额）。</p>
+                    <br>
+                    <p>3．本合同项下借款的具体用途为：_______________________________</p>
+                    <br>
+                    <p>4．本合同项下借款期限为（请在下述方框中选，不选的打ⅹ）：</p>
+                    <p>□自   年   月   日至   年   月   日；</p>
+                    <p>□自首次提款之日起    年（或   个月）。</p>
+                    <p>实际提款日和还款日以贷款人、借款人双方办理的借据（借款凭证）上所记载的日期为准。
+                        最后一次还款日不得超过本合同约定的借款期限。借据（借款凭证）是本合同不可分割的组成部分。</p>
+                    <br>
+                    <p>5．本合同项下贷款利率为（请在下述方框中选，不选的打ⅹ）：</p>
+                    <p>□（1）人民币贷款利率：</p>
+                    <p>本合同项下的每笔贷款发放时按贷款实际发放日的前一日日终全国银行间同业拆借中心公布的_________（期限）
+                        的贷款市场报价利率（LPR）□+ □-______BPS计算，若计算后利率小于0%则按0%执行。
+                        （贷款市场报价利率为年利率，可通过全国银行间同业拆借中心和中国人民银行网站查询）。</p>
+                    <p>每笔贷款发放后在贷款期内若遇贷款市场报价利率调整，则贷款利率（请在下述方框中√选，不选的打ⅹ）：</p>
+                    <p>□不作调整，系固定利率；</p>
+                    <p>□自利率调整日开始调整利率，以利率调整日的前一日日终全国银行间同业拆借中心公布的本条上述约定期限的贷款市场报价利率
+                        （LPR）为基数、上述约定利率浮动点数及计算方式不变。具体利率调整日如下（请在下述方框中√选，不选的打ⅹ）：</p>
+                    <p>□按年调整利率，利率调整日为实际贷款发放日在次公历年对应月的对应日，若实际贷款发放日在次公历年对应月无对应日的，
+                        则以实际贷款发放日在次公历年对应月的最后一日为利率调整日；</p>
+                    <p>□按年调整利率，利率调整日为每年1月1日；</p>
+                    <p>□按结息日调整利率，利率调整日为结息日次日；</p>
+                    <p>□按季调整利率, 利率调整日为每季末月______日；</p>
+                    <p>□按月调整利率，利率调整日为每月______日；</p>
+                    <p>□其他约定（特定利率调整日）：_______</p>
+                    <p>□（2）外币贷款利率：______。</p>
+                    <p>本合同项下的每笔贷款发放时按发放日贷款人公布的___个______（年/月/周）的______（LIBOR/HIBOR/SIBOR）
+                        利率加______BPS计算。</p>
+                    <p>本合同项下的每笔贷款发放后，贷款利率调整方式为（请在下述方框中选，不选的打ⅹ）：</p>
+                    <p>□自每笔贷款发放日起，每______（1/3/6/12）个月按对应日同期最新的外币利率调整一次利率；</p>
+                    <p>□固定利率，即利率不作调整。</p>
+                    <br>
+                    <p>6. 本合同项下的贷款结息方式为（请在下述方框中选，不选的打ⅹ）：</p>
+                    <p>□按月结息，则结息日为每月的二十（20）日；</p>
+                    <p>□按季结息，则结息日为每季末月的二十（20）日；</p>
+                    <p>□其他方式：_________________________________。</p>
+                    <p>且本合同项下每笔还款利随本清。</p>
+                    <p>7．本合同项下的罚息利率为：</p>
+                    <p>（1）本合同逾期罚息利率按计收罚息日适用的贷款执行利率加收    %执行。</p>
+                    <p>（2）未按本合同约定用途使用贷款的挪用罚息利率按计收罚息日适用的贷款执行利率加收    %执行。</p>
+                    <p>8．本合同项下贷款提款期为从年____月____日至年____月____日止。其中首笔提款应于年____月____日之前提取。</p>
+                    <p>9．本合同项下借款的提款计划如下（请在下述方框中选，不选的打ⅹ）：</p>
+                    <p>□提款计划见下表：</p>
+                    <div class="row">
+                        <div class="col-md-2"><p>序号</p></div>
+                        <div class="col-md-2"><p>提款日期</p></div>
+                        <div class="col-md-8"><p>提款金额</p></div>
+                        <div class="col-md-2"><p>1</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>2</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>3</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>4</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>5</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>6</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                    </div>
+                    <p>□其他提款计划约定：_________________________________。</p>
+                    <p>10．本合同项下借款的还款计划如下（请在下述方框中选，不选的打ⅹ）：</p>
+                    <p>□还款计划见下表：</p>
+                    <div class="row">
+                        <div class="col-md-2"><p>序号</p></div>
+                        <div class="col-md-2"><p>提款日期</p></div>
+                        <div class="col-md-8"><p>提款金额</p></div>
+                        <div class="col-md-2"><p>1</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>2</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>3</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>4</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>5</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                        <div class="col-md-2"><p>6</p></div>
+                        <div class="col-md-2"><p>___年___月___日</p></div>
+                        <div class="col-md-8"><p>__________________</p>（大写金额）</div>
+                    </div>
+                    <p>□其他还款计划约定：_________________________________。</p>
+                    <p>11．提前归还借款时的违约金：相当于实际提前归还借款金额总额的________％或_______（币种）_______元整（大写）。</p>
+                    <p>12．提前还贷的本金金额不得少于_______（币种）__________________万元整（大写）。</p>
+                    <p>13．账户开立（人民币贷款在下述模式中选一项，外币贷款应选择专户模式，不选的打ⅹ）：</p>
+                    <p>□非专户模式： </p>
+                    <p>（1）借款人在贷款人处开立的一般结算账户为： </p>
+                    <p>开户行：_______________</p>
+                    <p>户名：_______________</p>
+                    <p>账号：_______________</p>
+                    <p>（2）借款人在贷款人处开立的资金回笼账户为：_______________</p>
+                    <p>开户行：_______________</p>
+                    <p>户名：_______________</p>
+                    <p>账号：_______________</p>
+                    <p>□专户模式：</p>
+                    <p>（1）借款人在贷款人处开立的流动资金贷款专用账户为：_______________</p>
+                    <p>开户行：_______________</p>
+                    <p>户名：_______________</p>
+                    <p>账号：_______________</p>
+                    <p>（2）借款人在贷款人处开立的一般结算账户为： </p>
+                    <p>开户行：_______________</p>
+                    <p>户名：_______________</p>
+                    <p>账号：_______________</p>
+                    <p>（3）借款人在贷款人处开立的资金回笼账户为：</p>
+                    <p>开户行：_______________</p>
+                    <p>户名：_______________</p>
+                    <p>账号：_______________</p>
+                    <p>14．贷款人受托支付：支付对象明确且单笔支付金额超过（币种金额）_______________的借款资金支付，
+                        应采用贷款人受托支付方式。</p>
+                    <p>15．为本合同项下债务提供担保的担保人及担保合同包括但不限于：</p>
+                    <p>□保证人_______________《保证合同》编号【_______________】；
+                    </p>
+                    <p>□抵押人_______________《抵押合同》编号【_______________】；
+                    </p>
+                    <p>□质押人_______________《质押合同》编号【_______________】；
+                    </p>
+                    <p>□其他担保______________________________</p>
+                    <p>16．违约处理。</p>
+                    <p>违约金：相当于借款本金金额的百分之_______________（大写）或 _______________。</p>
+                    <p>17．本合同的附件包括：</p>
+                    <p>（1）《    》。</p>
+                    <p>（2）《    》。</p>
+                    <p>（3）《    》。</p>
+                    <p>（4）《    》。</p>
+                    <p>（5）《________》。</p>
+                    <p> 18．双方约定的其他事项。</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p> 19．本合同正本一式 份，其中借款人执_______________份、贷款人执_______________份、_________执_______________份，每份具有同等法律效力。</p>
+                    <p>（第一部分 完） </p>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-lg contract-submit-button" value="提交" >提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="col-md-1 offset-1">
+            <p><a href="#">关于我们</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="#">法律声明及隐私政策</a></p>
+        </div>
+        <div class="col-md-1">
+            <p><a href="#">加入我们</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-1 foot-tag foot-tag-color">
+            <address>Address/地址：辽宁省大连经济技术开发区图强街321号</address>
+        </div>
+        <div class="col-md-2 foot-tag foot-tag-color">
+            <p>P.C./邮编：116600</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-1 foot-tag foot-tag-color">
+            <p>Tel/联系电话：020-000000 000-000000</p>
+        </div>
+        <div class="col-md-2 foot-tag foot-tag-color">
+            <p>Mail/邮箱：contact@fkadjkhsf.com</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

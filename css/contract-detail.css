@@ -1,0 +1,78 @@
+.contract-detail-container{
+    width: 80%;
+    margin: 0 auto 3%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.contract-title-hint{
+    margin: 0 15px;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+}
+
+.contract-content-container{
+    width: 85%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.contract-content-container label{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contract-content-container p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contract-content-container a{
+    font-weight: bolder;
+    color: #333333;
+    font-size: 20px;
+}
+
+#contract-name{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.clause{
+    margin: 40px auto;
+}
+
+.input-regulation{
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.sign-area-container{
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sign-area-container .input-regulation{
+    width: auto;
+}
+
+.contract-sign-date .input-regulation{
+    width: 2em;
+}
+
+.contract-submit-button{
+    background-color: rgb(0, 116, 238);
+    font-size: 24px;
+    color: #ffffff;
+    border-radius: 43px;
+    padding: 10px 100px;
+    margin: 30px 20px;
+    border: none;
+}
+
+.contract-submit-button:hover{
+    background-color: rgb(160, 160, 160);
+}
